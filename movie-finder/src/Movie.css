@@ -1,0 +1,41 @@
+.movie {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.movie img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+.movie-info {
+  padding: 15px;
+}
+
+.movie-title {
+  font-size: 18px;
+  margin: 0 0 10px;
+}
+
+.movie-year {
+  color: #666;
+  font-size: 16px;
+  margin: 0 0 10px;
+}
+
+.movie-plot, .movie-director, .movie-rating {
+  font-size: 14px;
+  margin: 5px 0;
+}
